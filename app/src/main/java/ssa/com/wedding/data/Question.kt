@@ -5,4 +5,5 @@ data class Question(
         val forWhom: String,
         val answers: List<String>?,
         val answer: String,
-        val imgRes: Int? = null)
+        val imgRes: Int? = null,
+        val rightImgRes: Int? = null)

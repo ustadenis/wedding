@@ -13,6 +13,12 @@ class AnswerAdapter(val answers: List<String>): RecyclerView.Adapter<AnswerViewH
 
     var currentCheck = 0
 
+    var enabled = true
+        set(value) {
+            field = value
+            notifyDataSetChanged()
+        }
+
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): AnswerViewHolder {
         val view = LayoutInflater.from(parent.context).inflate(R.layout.list_item_answers, parent, false)
         return AnswerViewHolder(view)
@@ -28,6 +34,7 @@ class AnswerAdapter(val answers: List<String>): RecyclerView.Adapter<AnswerViewH
                 notifyDataSetChanged()
             }
         }
+        holder.radio.isEnabled = enabled
         holder.title.text = answers[position]
     }
 

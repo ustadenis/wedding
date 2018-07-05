@@ -21,4 +21,8 @@ class FinalActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_final)
     }
+
+    override fun onBackPressed() {
+        return
+    }
 }
