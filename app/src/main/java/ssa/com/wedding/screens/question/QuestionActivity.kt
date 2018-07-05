@@ -47,7 +47,7 @@ class QuestionActivity : AppCompatActivity() {
 
     private fun setUpView(question: Question) {
         question.imgRes?.let { questionImg.setImageResource(it) }
-        this.question.text = question.question
+        this.question.text = getString(R.string.question_format, question.forWhom, question.question)
         if (question.answers?.isEmpty() == false) {
             answers.visibility = View.VISIBLE
             answer.visibility = View.GONE

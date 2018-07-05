@@ -46,6 +46,8 @@
                 android:layout_height="match_parent"
                 android:layout_margin="8dp"
                 android:gravity="center"
+                android:textSize="40sp"
+                android:textColor="@android:color/black"
                 android:text="@string/congratulations"
                 tools:text="Поздравление"/>
 

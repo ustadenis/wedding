@@ -41,7 +41,7 @@ class App: Application() {
                     rightImgRes = R.drawable.tree_right
             ))
             questions.add(Question(
-                    question = "Этого человека всегда все палит)",
+                    question = "Этот человек всегда все палит)",
                     forWhom = "Артем",
                     answers = null,
                     answer = "Боб",
