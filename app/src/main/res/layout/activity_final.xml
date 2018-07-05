@@ -46,6 +46,7 @@
                 android:layout_height="match_parent"
                 android:layout_margin="8dp"
                 android:gravity="center"
+                android:text="@string/congratulations"
                 tools:text="Поздравление"/>
 
         </android.support.v7.widget.CardView>
