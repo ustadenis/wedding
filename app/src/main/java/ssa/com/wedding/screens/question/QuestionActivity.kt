@@ -56,7 +56,7 @@ class QuestionActivity : AppCompatActivity() {
     }
 
     private fun checkAnswer(answer: String?) {
-        if(currentQuestion?.answer == answer) {
+        if(currentQuestion?.answer?.equals(answer, true) == true) {
             startActivity(createIntent(this))
         } else {
             showInvalidAnswer()
